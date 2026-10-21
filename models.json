@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "runtime": "2026.3.0",
+  "models": [
+    {
+      "id": "smollm2-135m-ov",
+      "name": "SmolLM2-135M-Instruct - HippoLink",
+      "tier": "budget",
+      "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "source_model": "mostafa-ibrahim1625/smollm2-135m-instruct-hippolink",
+      "revision": "29b47eb9f6c872409e1f6949031f05a997101f1f",
+      "task": "generation",
+      "license": "apache-2.0",
+      "quantization": "int4",
+      "quality": "experimental",
+      "platforms": ["android-aarch64", "linux-x86_64", "windows-x86_64"],
+      "requirements": {
+        "min_total_ram_mb": 2560,
+        "min_available_ram_mb": 1024,
+        "min_cpu_cores": 2
+      },
+      "reference_device": {
+        "manufacturer": "realme",
+        "model": "realme 6 (RMX2001)",
+        "soc": "MediaTek Helio G90T",
+        "total_ram_mb": 4096
+      },
+      "max_context_tokens": 1024,
+      "kv_cache_limit_mb": 110,
+      "download_bytes": 95406050,
+      "artifacts": [
+        {
+          "path": "chat_template.jinja",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/chat_template.jinja",
+          "bytes": 373,
+          "sha256": "d1c0ce73f56a3eb57c157fec6019c9a9812d60f6d67078a0f375e0d90a7dddaf"
+        },
+        {
+          "path": "config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/config.json",
+          "bytes": 911,
+          "sha256": "3a159acc42f1fa7814f8b192697d5c3a1a9c0bea9d8007bf411db4d6dc1d1fb9"
+        },
+        {
+          "path": "generation_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/generation_config.json",
+          "bytes": 139,
+          "sha256": "d8da525d2f884d0cf284ccc6a6706fae49577aa544abe1928fbbcc6fbd4bc677"
+        },
+        {
+          "path": "merges.txt",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/merges.txt",
+          "bytes": 466391,
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+        },
+        {
+          "path": "openvino_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_config.json",
+          "bytes": 792,
+          "sha256": "cc00cbc8be69f7572990c5b81f032189296b054d560e56dc9e7425a8d1fdb7f0"
+        },
+        {
+          "path": "openvino_detokenizer.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_detokenizer.bin",
+          "bytes": 725651,
+          "sha256": "4e1c6df6a74f4c9825ee00aac80d80304ab18046309042b523e0bdfce11f9973"
+        },
+        {
+          "path": "openvino_detokenizer.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_detokenizer.xml",
+          "bytes": 7151,
+          "sha256": "352f480b961a2954adff42564dd9751eb553763d4f9da3407d4ceca38b3cae4f"
+        },
+        {
+          "path": "openvino_model.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_model.bin",
+          "bytes": 85447749,
+          "sha256": "e0ddc7ac361ee011ea989013ea6fa28dcefb120d4e6fa181f674d9432a48dadf"
+        },
+        {
+          "path": "openvino_model.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_model.xml",
+          "bytes": 2563598,
+          "sha256": "f71ae9638eacaf32b7c6b93298952b5f2ef6bd3a27cfd7bf03d567073d06adc2"
+        },
+        {
+          "path": "openvino_tokenizer.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_tokenizer.bin",
+          "bytes": 1840716,
+          "sha256": "94fed74a5c0282700338442a510fe2ef569d3b25f31b1f0f519aa99fd2a3d88c"
+        },
+        {
+          "path": "openvino_tokenizer.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/openvino_tokenizer.xml",
+          "bytes": 25020,
+          "sha256": "c8227f89b39058cefe47d70055143c4aeded981b6e339ce801b4dcdee4bcdb49"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/special_tokens_map.json",
+          "bytes": 689,
+          "sha256": "68d920624c05998fa87a133555aff625768fc69f1b41baf0592f8d09b60896b3"
+        },
+        {
+          "path": "tokenizer.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/tokenizer.json",
+          "bytes": 3522656,
+          "sha256": "7d27c493c729a66ecefc837280b05d948b1ed50d130eebdbf911b1b36cf38ed7"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/tokenizer_config.json",
+          "bytes": 3552,
+          "sha256": "2cc400b5016d790d4123eb95d6cf5af17a9c1fa874564414f2eb034b0b4c6969"
+        },
+        {
+          "path": "vocab.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/smollm2-135m-instruct-hippolink/resolve/29b47eb9f6c872409e1f6949031f05a997101f1f/vocab.json",
+          "bytes": 800662,
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+        }
+      ]
+    },
+    {
+      "id": "qwen2.5-1.5b-ov",
+      "name": "Qwen2.5-1.5B-Instruct - HippoLink",
+      "tier": "mid",
+      "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "source_model": "mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink",
+      "revision": "f5894cb3098ed07c67e074bc8f6c0fc0286118ad",
+      "task": "generation",
+      "license": "apache-2.0",
+      "quantization": "int4",
+      "quality": "experimental",
+      "platforms": ["android-aarch64", "linux-x86_64", "windows-x86_64"],
+      "requirements": {
+        "min_total_ram_mb": 5120,
+        "min_available_ram_mb": 2048,
+        "min_cpu_cores": 2
+      },
+      "reference_device": {
+        "manufacturer": "HONOR",
+        "model": "HONOR 400 (DNY-NX9)",
+        "soc": "Qualcomm Snapdragon 7 Gen 3",
+        "total_ram_mb": 12288
+      },
+      "max_context_tokens": 4096,
+      "kv_cache_limit_mb": 450,
+      "download_bytes": 942613719,
+      "artifacts": [
+        {
+          "path": "added_tokens.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/added_tokens.json",
+          "bytes": 629,
+          "sha256": "f0acedf99e19ec0a5b797ffbd0b94328172ccd90f7f385bbc521cda2701b03ab"
+        },
+        {
+          "path": "chat_template.jinja",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/chat_template.jinja",
+          "bytes": 2561,
+          "sha256": "8aa40ce145adb73cb3a75194dc0224702a95850ec5275cabb728496bbd749fc6"
+        },
+        {
+          "path": "config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/config.json",
+          "bytes": 1374,
+          "sha256": "c4c4a8dd2c389d50c7edbf18369c17d7c193f4faec6ac8d7e4f25e53de0a8bff"
+        },
+        {
+          "path": "generation_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/generation_config.json",
+          "bytes": 256,
+          "sha256": "b017173db4a82cfc6dc6e4368aee7f8f4eceeb380cdae840528833be24ac45c8"
+        },
+        {
+          "path": "merges.txt",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/merges.txt",
+          "bytes": 1671853,
+          "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        },
+        {
+          "path": "openvino_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_config.json",
+          "bytes": 420,
+          "sha256": "319f9f7aac473cd1a55b21f1bcf9f149c28f14091dffe025aa5a0497eccba7a0"
+        },
+        {
+          "path": "openvino_detokenizer.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_detokenizer.bin",
+          "bytes": 2189639,
+          "sha256": "3ca47601554a3b871c1e45e8f31aa6e17d726365c075fb430d1a2089484ae8d6"
+        },
+        {
+          "path": "openvino_detokenizer.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_detokenizer.xml",
+          "bytes": 10082,
+          "sha256": "216855d412c1d260421ea00bd46bbb23966cb71a7ef3ea0d61b253665ce65879"
+        },
+        {
+          "path": "openvino_model.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_model.bin",
+          "bytes": 916366541,
+          "sha256": "6b889c9a19c0cfb0e8fed1c655dd0ee91e4925358725807fc4b1964ffb19bd65"
+        },
+        {
+          "path": "openvino_model.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_model.xml",
+          "bytes": 2548350,
+          "sha256": "e88c7407b695381e5ffca37d75b90c84c2663abab188e68fdd693f7385708e76"
+        },
+        {
+          "path": "openvino_tokenizer.bin",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_tokenizer.bin",
+          "bytes": 5588609,
+          "sha256": "8ddfab335c1b04a656a7e9f97625f0e4a4202aeef4e257cf75fc33f9c70bc3f1"
+        },
+        {
+          "path": "openvino_tokenizer.xml",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/openvino_tokenizer.xml",
+          "bytes": 29139,
+          "sha256": "f75993d179e7f1e5343f14d5fbb188728f6148ac682268103cd825ae2b72ac87"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/special_tokens_map.json",
+          "bytes": 644,
+          "sha256": "57255613bbe23c9497211ca68561ff429a51e871dbaf5a59998fa4c8f7fe168a"
+        },
+        {
+          "path": "tokenizer.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/tokenizer.json",
+          "bytes": 11421896,
+          "sha256": "9c5ae00e602b8860cbd784ba82a8aa14e8feecec692e7076590d014d7b7fdafa"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/tokenizer_config.json",
+          "bytes": 4893,
+          "sha256": "5fd4cea2574beb6b70ba31582179880d331b723f5b5119ee67c29d45b983f7be"
+        },
+        {
+          "path": "vocab.json",
+          "url": "https://huggingface.co/mostafa-ibrahim1625/qwen2.5-1.5b-instruct-hippolink/resolve/f5894cb3098ed07c67e074bc8f6c0fc0286118ad/vocab.json",
+          "bytes": 2776833,
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ]
+    }
+  ]
+}
