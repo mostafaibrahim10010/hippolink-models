@@ -1,0 +1,103 @@
+{
+  "schema_version": "2.1.0",
+  "export_format": "hippolink_tier_phone_specs_export_v2",
+  "exported_at": "2026-10-21T03:37:47Z",
+  "bundle_id": "hippolink-budget-smollm2-135m-instruct-int4_sym_g128_r099_awq_se",
+  "bundle_path": "C:\\Users\\LOQ\\Documents\\GitHub\\Intel\\artifacts\\hippolink-budget-smollm2-135m-instruct-int4_sym_g128_r099_awq_se",
+  "tier": "budget",
+  "tier_name": "Budget Reference Tier",
+  "phone_specs": {
+    "device_profile": "realme 6 (RMX2001, MediaTek Helio G90T, 4GB RAM)",
+    "min_system_ram_gb": 3,
+    "max_system_ram_gb": 4,
+    "max_context_tokens": 1024,
+    "kv_cache_limit_mb": 110,
+    "measured_ttft_ms": 308.0,
+    "measured_tps": 28.2,
+    "peak_ram_mb": 414.5,
+    "thermal_delta_c": 1.47
+  },
+  "model_metadata": {
+    "model_id": "smollm2-135m-instruct",
+    "hippolink_model_name": "SmolLM2-135M-Instruct - HippoLink",
+    "recipe": "int4_sym_g128_r099_awq_se",
+    "files_count": 9,
+    "size_mb": 0.0,
+    "runtime_engines": [
+      "Intel OpenVINO GenAI Mobile",
+      "ONNX Runtime GenAI"
+    ],
+    "offline_mode_enforced": true
+  },
+  "distribution": {
+    "huggingface_repo_id": "hippolink/smollm2-135m-instruct-hippolink",
+    "huggingface_repo_url": "https://huggingface.co/hippolink/smollm2-135m-instruct-hippolink",
+    "download_base_url": "https://huggingface.co/hippolink/smollm2-135m-instruct-hippolink/resolve/main",
+    "branch": "main",
+    "model_card_url": "https://huggingface.co/hippolink/smollm2-135m-instruct-hippolink/blob/main/MODEL_CARD.md"
+  },
+  "app_client_configuration": {
+    "tier_key": "budget",
+    "tier_name": "Budget Reference Tier",
+    "device_profile": "realme 6 (RMX2001, MediaTek Helio G90T, 4GB RAM)",
+    "bundle_id": "hippolink-budget-smollm2-135m-instruct-int4_sym_g128_r099_awq_se",
+    "model_id": "smollm2-135m-instruct",
+    "hippolink_model_name": "SmolLM2-135M-Instruct - HippoLink",
+    "app_display_name": "SmolLM2-135M-Instruct - HippoLink (INT4 AWQ)",
+    "download_base_url": "https://huggingface.co/hippolink/smollm2-135m-instruct-hippolink/resolve/main",
+    "min_system_ram_gb": 3,
+    "max_system_ram_gb": 4,
+    "max_context_tokens": 1024,
+    "kv_cache_limit_mb": 110,
+    "measured_ttft_ms": 308.0,
+    "measured_tps": 28.2,
+    "peak_ram_mb": 414.5,
+    "runtime_engines": [
+      "Intel OpenVINO GenAI Mobile",
+      "ONNX Runtime GenAI"
+    ]
+  },
+  "components": {
+    "slm": "SmolLM2-135M-Instruct - HippoLink",
+    "embedder": "multilingual-e5-small - HippoLink",
+    "face_detector": "face-detection-retail-0004 - HippoLink",
+    "face_reid": "face-reidentification-retail-0095 - HippoLink"
+  },
+  "rag_spec": {
+    "_comment": "Single source of truth for RAG behaviour. Used by the host evaluator (phase 4) AND shipped inside the phone package so the phone runs exactly what was certified. similarity_threshold is re-tuned on the dev split by phase 4 and written into the release package.",
+    "version": 1,
+    "embedder_query_prefix": "query: ",
+    "embedder_passage_prefix": "passage: ",
+    "chunking": {
+      "unit": "sentence",
+      "max_chars": 400
+    },
+    "top_k": 4,
+    "similarity_threshold": 0.78,
+    "no_record_token": "NO_RECORD",
+    "refusal_template": {
+      "en": "I have no recorded record of that in your memory vault. Would you like your family to add it?",
+      "ar": "مش لاقي أي حاجة عن ده في ذاكرتك التانية. تحب حد من العيلة يضيفه؟"
+    },
+    "generation": {
+      "max_new_tokens": 80,
+      "do_sample": false
+    },
+    "system_prompt": {
+      "en": "You are HippoLink, a gentle memory assistant for a patient with memory loss. Answer ONLY using the facts in the SOURCES. Use the exact names, numbers, doses and times written in the SOURCES. Answer in one or two short sentences, speaking directly to the patient as 'you'. If the SOURCES do not contain the answer, reply with exactly: NO_RECORD",
+      "ar": "إنت HippoLink، مساعد ذاكرة لطيف لمريض عنده فقدان ذاكرة. جاوب بس من المعلومات اللي في المصادر (SOURCES). استخدم نفس الأسماء والأرقام والجرعات والمواعيد المكتوبة في المصادر بالظبط. جاوب في جملة أو جملتين قصيرين باللهجة المصرية وكلم المريض مباشرة. لو المصادر مفيهاش الإجابة، رد بالظبط بكلمة: NO_RECORD"
+    },
+    "post_check": {
+      "verify_numbers": true,
+      "verify_vault_names": true
+    },
+    "max_context_tokens": 1024,
+    "kv_cache_limit_mb": 110,
+    "target_tier": "budget"
+  },
+  "verification": {
+    "signature_b64": "ynrbsW7ElNNwo/TpFsmpVUT1cobjVKSHx0Rpp8OviHVeAPFJHDoH3gqrCvhQ8dodN0O8fUyDx0+BGZMLWwTpDw==",
+    "benchmark_seal_sha256": "6163e7041cf7275123512a934726b13db61b4adea3f391975b792a9df73171af",
+    "huggingface_hub_tag": "v1.2.0-int4-awq-onnx"
+  }
+}
